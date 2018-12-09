@@ -1,0 +1,24 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "Shortens Urls",
+  "main": "js.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilitvak/Url_Shortener.git"
+  },
+  "author": "Irwin Litvak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilitvak/Url_Shortener/issues"
+  },
+  "homepage": "https://github.com/ilitvak/Url_Shortener#readme"
+}
