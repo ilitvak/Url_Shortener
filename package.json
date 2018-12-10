@@ -2,12 +2,16 @@
   "name": "url_shortener",
   "version": "1.0.0",
   "description": "Shortens Urls",
-  "main": "js.js",
+  "main": "url_shortener.js",
   "dependencies": {
     "axios": "^0.18.0",
+    "node-persist": "^3.0.1",
+    "persistent-cache": "^1.1.1",
     "readline": "^1.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0"
+  },
   "scripts": {
     "start": "node server/index.js"
   },
