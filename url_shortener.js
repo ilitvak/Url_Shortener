@@ -15,6 +15,9 @@ let shortUrls = cache();
 let longUrls = [];
 let shortenedUrls = [];
 
+let shortUrlObj = {};
+let count = 0;
+
 // When readline.js is run, askUserInput function will run.
 function askUserInput(){
 
@@ -32,8 +35,11 @@ function askUserInput(){
                     console.log('Response from TinyUrl: ', response.data);
                     shortenedUrls.push(response.data);
 
+                    // creates new object that stores shortened Url and Original Url
+                    shortUrlObj[count++] = {'storage': [response.data, userInput]}
+
                     // stores shortened urls into the cache
-                    shortUrls.putSync('short', shortenedUrls);
+                    shortUrls.putSync('short', shortUrlObj);
                 })
                 .catch((error) => {
                     console.log('Error from TinyUrl: ', error);
