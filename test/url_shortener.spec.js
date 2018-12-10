@@ -18,6 +18,7 @@ describe('Url Shortener function', () => {
     })
 })
 
+// comment out above test to try test below.
 
 // Original Url -  https://www.salesforce.com/dreamforce/why-attend/
 // Shortened Url - http://tinyurl.com/y74epgdc
